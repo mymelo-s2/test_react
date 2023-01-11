@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Data from "./userinfo.json";
-import "./css/login.css";
+import Data from "../json/userinfo.json";
+import "../css/login.css";
 
 const Login = () => {
   const navigate = useNavigate();

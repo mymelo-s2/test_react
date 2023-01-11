@@ -1,4 +1,4 @@
-import "./css/styles.css";
+import "../css/styles.css";
 import React, { useState, VFC } from "react";
 
 type Props = {

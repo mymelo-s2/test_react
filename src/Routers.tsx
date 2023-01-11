@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./login";
-import Main from "./main";
-import SampleList from "./samplelist";
-import Textbox from "./textbox";
-import Date from "./date";
-import Password from "./password";
+import Login from "./components/login";
+import Main from "./components/main";
+import SampleList from "./components/samplelist";
+import Textbox from "./components/textbox";
+import Date from "./components/date";
+import Password from "./components/password";
 
 const Routers = () => {
   return (
