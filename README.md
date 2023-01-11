@@ -1,4 +1,4 @@
-# test_react
+# React TypeScript Sample
 
 Created with CodeSandbox
 
