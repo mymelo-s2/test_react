@@ -1,6 +1,6 @@
 import { memo, useState, VFC } from "react";
 import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
-import "./main.css";
+import "./css/main.css";
 
 export const Main: VFC = memo(() => {
   const navigate = useNavigate();

@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./css/styles.css";
 import React, { useState } from "react";
 
 export default function Date() {
