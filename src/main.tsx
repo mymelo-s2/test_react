@@ -1,15 +1,33 @@
-import { Link, Outlet } from "react-router-dom";
+import { memo, useState, VFC } from "react";
+import { Link, Outlet, useLocation, useNavigate } from "react-router-dom";
 import "./main.css";
 
-const Main = () => {
+export const Main: VFC = memo(() => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [userName, setUserNameElement] = useState<{ userName: string }>(
+    location.state as { userName: string }
+  );
+  const logout = () => {
+    setUserNameElement({ userName: "" });
+    navigate("/");
+  };
   return (
     <div className="main">
       <div className="main_header" id="header">
-        Sample Web Page
+        React TypeScript Sample
+        <p className="username">user : {userName.userName}</p>
+        <p className="logout">
+          <input type="button" value="logout" onClick={() => logout()} />
+        </p>
       </div>
       <div className="main_menu">
         <div className="sidebar">
-          <div className="menu">Sample List</div>
+          <div>
+            <Link to="/samplelist" className="menu">
+              Sample List
+            </Link>
+          </div>
           <div>
             <Link to="/textbox" className="menu">
               sample1
@@ -32,6 +50,6 @@ const Main = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Main;
