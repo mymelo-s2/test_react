@@ -2,6 +2,6 @@
 
 Created with CodeSandbox
 
-###### React TypeScript Sample
+### React TypeScript Sample
 
 login info >> src/userinfo.json
